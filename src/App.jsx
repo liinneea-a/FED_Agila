@@ -1,13 +1,18 @@
-import { useState } from 'react'
+import { useState } from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+
+import Layout from "./Layout";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
-    <div className="App">
-     <h1>Hejsan first test.</h1>
-    </div>
-  )
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}></Route>
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
