@@ -58,6 +58,10 @@ Formik is a small group of React components and hooks for building forms in Reac
 
 p5.js is a JavaScript library for creative coding, with a focus on making coding accessible and inclusive for artists, designers, educators, beginners, and anyone else.
 
+### [Next.js](https://nextjs.org)
+
+Next.js is an open-source web development framework built on top of Node.js enabling React-based web applications functionalities such as server-side rendering and generating static websites.
+
 ## Languages
 
 ### [Javascript (JS)](https://www.javascript.com)
@@ -93,3 +97,7 @@ Figma is a free, online UI tool to create, collaborate, prototype, and handoff.
 ### [Photoshop](https://www.adobe.com/products/photoshop.html)
 
 Photoshop is an image creation, graphic design and photo editing software developed by Adobe. The software provides many image editing features for pixel-based images, raster graphics and vector graphics.
+
+### [WordPress](https://wordpress.com)
+
+WordPress is a free and open-source content management system written in PHP and paired with a MySQL or MariaDB database with supported HTTPS. Features include a plugin architecture and a template system, referred to within WordPress as Themes.
