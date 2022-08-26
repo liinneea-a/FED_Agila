@@ -3,7 +3,13 @@
 }
 
 .headliner h2 {
-    margin: 0;
+  margin: 0;
+  margin-block: 0;
+  line-height: 1;
+}
+
+.headliner p {
+  max-width: 23.5rem;
 }
 
 .section {
