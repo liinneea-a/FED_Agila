@@ -1,1 +1,29 @@
+:root {
+    --main-color: #473579;
+    --background-color: #232323;
+}
 
+#root {
+    width: 68rem;
+    margin: auto;
+}
+
+body {
+    background-color: var(--background-color);
+    color: white;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-family:  Inter ,Arial, Helvetica, sans-serif;
+    font-size: 48px;
+}
+
+p {
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.largePText {
+    font-size: 24px;
+}
