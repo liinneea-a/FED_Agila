@@ -16,17 +16,17 @@ export default function SubHero() {
         <div style={iconsStyle}>
           <EmojiObjectsIcon style={icon}/>
 
-          <p >Great ides for your business</p>
+          <p className="largePText">Great ides for your business</p>
         </div>
         <div style={iconsStyle}>
           <TuneIcon style={icon}/>
 
-          <p>Perfectly tuned for the market</p>
+          <p className="largePText">Perfectly tuned for the market</p>
         </div>
         <div style={iconsStyle}>
           <EmojiObjectsIcon style={icon}/>
 
-          <p>Innovative and imoressive</p>
+          <p className="largePText">Innovative and imoressive</p>
         </div>
       </div>
     </div>
@@ -55,11 +55,10 @@ const iconsContainerStyle = {
 
 const iconsStyle = {
   width: '33%',
-
   padding: '1rem',
   display: 'flex',
   flexDirection: "column",
-  justifyContent: 'center',
+  justifyContent: 'start',
   alignItems: 'center',
   fontSize: "24px",
   textAlign: 'center'
