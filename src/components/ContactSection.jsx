@@ -1,6 +1,6 @@
 import React from 'react'
-import { Headliner } from './Headliner'
 import mapImg from '../assets/images/map.jpg'
+import Headliner from './Headliner'
 
 const ContactSection = () => {
   return (
