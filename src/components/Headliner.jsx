@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Headliner = ({ title, text }) => {
+const Headliner = ({ title, text }) => {
   return (
     <div className="headliner">
       <h2>{title}</h2>
@@ -8,3 +8,5 @@ export const Headliner = ({ title, text }) => {
     </div>
   )
 }
+
+export default Headliner
