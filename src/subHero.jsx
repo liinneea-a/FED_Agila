@@ -7,7 +7,7 @@ export default function SubHero() {
     <div style={rootStyle}>
       <div style={headlineStyle}>
         <h2>What we do</h2>
-        <p>
+        <p style={{margin: 0}}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
           purus sit amet luctus
         </p>
@@ -40,7 +40,6 @@ const rootStyle = {
   flexDirection: 'column',
   alignItems: 'center',
   justifyContent: 'space-around',
-  border: '2px solid red',
 };
 
 const headlineStyle = {

@@ -45,6 +45,7 @@ select {
 h2 {
   font-family: Inter, Arial, Helvetica, sans-serif;
   font-size: 3rem;
+  margin: .5rem;
 }
 
 p {
