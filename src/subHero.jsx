@@ -1,9 +1,11 @@
 import EmojiObjectsIcon from '@mui/icons-material/EmojiObjects';
+import TuneIcon from '@mui/icons-material/Tune';
+import { textAlign } from '@mui/system';
 
 export default function SubHero() {
   return (
     <div style={rootStyle}>
-      <div style={textStyle}>
+      <div style={headlineStyle}>
         <h2>What we do</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
@@ -12,17 +14,17 @@ export default function SubHero() {
       </div>
       <div style={iconsContainerStyle}>
         <div style={iconsStyle}>
-          <EmojiObjectsIcon />
+          <EmojiObjectsIcon style={icon}/>
 
-          <p>Great ides for your business</p>
+          <p >Great ides for your business</p>
         </div>
         <div style={iconsStyle}>
-          <EmojiObjectsIcon />
+          <TuneIcon style={icon}/>
 
           <p>Perfectly tuned for the market</p>
         </div>
         <div style={iconsStyle}>
-          <EmojiObjectsIcon />
+          <EmojiObjectsIcon style={icon}/>
 
           <p>Innovative and imoressive</p>
         </div>
@@ -32,16 +34,16 @@ export default function SubHero() {
 }
 
 const rootStyle = {
-  width: "100%",
+  width: "68rem",
+  height: '43rem',
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
-  justifyContent: 'center',
+  justifyContent: 'space-around',
   border: '2px solid red',
 };
 
-const textStyle = {
-  border: '2px solid blue',
+const headlineStyle = {
   maxWidth: '20rem',
   textAlign: 'center',
 };
@@ -53,9 +55,17 @@ const iconsContainerStyle = {
 
 const iconsStyle = {
   width: '33%',
-  border: '2px solid green',
+
+  padding: '1rem',
   display: 'flex',
   flexDirection: "column",
   justifyContent: 'center',
-  alignItems: 'center'
+  alignItems: 'center',
+  fontSize: "24px",
+  textAlign: 'center'
 };
+
+const icon = {
+  fontSize: '150px',
+}
+
