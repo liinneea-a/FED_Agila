@@ -23,7 +23,7 @@ const ContactForm = () => {
           <Field id="subject" name="subject" placeholder="" />
 
           <label htmlFor="message">Message</label>
-          <Field className="message-input" id="message" name="message" placeholder="" />
+          <textarea className="message-input" id="message" name="message" placeholder="" />
 
           <label htmlFor="email">Email</label>
           <Field id="email" name="email" placeholder="" type="email" />
