@@ -1,1 +1,13 @@
+.headliner {
+  text-align: center;
+}
 
+.headliner h2 {
+  margin: 0;
+}
+
+.section {
+  display: grid;
+  place-items: center;
+  padding-block: 5rem;
+}
