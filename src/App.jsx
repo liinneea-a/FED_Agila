@@ -1,11 +1,12 @@
 import { useState } from 'react'
+import SubHero from './subHero';
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <div className="App">
-     <h1>Hejsan first test.</h1>
+    <SubHero/>
     </div>
   )
 }
