@@ -42,7 +42,7 @@
 
 ## TS and P5JS
 
-[Space Race](https://github.com/PettoDavida/Slutprojekt)
+[Tank Hero](https://github.com/AdaHep/Tank-Hero)
 
 ## HTML and JS
 
@@ -73,6 +73,10 @@
 ## React, TS, Multer and Mongoose
 
 [NFT Heaven](https://github.com/liinneea-a/DW-slutprojekt)
+
+## TS and P5JS
+
+[Space Race](https://github.com/PettoDavida/Slutprojekt)
 
 # Sabina
 
