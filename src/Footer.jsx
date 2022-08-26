@@ -41,14 +41,14 @@ const rootStyle = {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    backgroundColor: "#313131",
+    // backgroundColor: "#313131",
     textAlign: 'center',
 }
 
 const contentContainerStyle = {
     display: 'flex',
     justifyContent: 'space-between',
-    width: '68rem',
+    width: '100%',
 
 }
 
