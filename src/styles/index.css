@@ -1,26 +1,26 @@
 :root {
-    --clr-brand: #473579;
-    --clr-bg-dark: #232323;
-    --clr-neutral-dark: #313131;
-    --clr-neutral-light: #f0f0f0;
+  --clr-brand: #473579;
+  --clr-bg-dark: #232323;
+  --clr-neutral-dark: #313131;
+  --clr-neutral-light: #f0f0f0;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html,
 body {
-    height: 100%;
+  height: 100%;
 }
 
 body {
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
-    background-color: var(--clr-bg-dark);
-    color: var(--clr-neutral-light);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--clr-bg-dark);
+  color: var(--clr-neutral-light);
 }
 
 img,
@@ -28,34 +28,35 @@ picture,
 video,
 canvas,
 svg {
-    display: block;
-    max-width: 100%;
+  display: block;
+  max-width: 100%;
 }
 
 input,
 button,
 textarea,
 select {
-    font: inherit;
+  font: inherit;
 }
 
 #root {
-    width: 68rem;
-    margin: auto;
-    isolation: isolate;
+  max-width: 68rem;
+  margin: auto;
+  isolation: isolate;
 }
 
 h2 {
   font-family: Inter, Arial, Helvetica, sans-serif;
   font-size: 3rem;
-  margin: .5rem;
+  margin: 0.5rem;
 }
 
-p, li {
-    font-family: Inter, Arial, Helvetica, sans-serif;
-    font-size: 1.125rem;
+p,
+li {
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-size: 1.125rem;
 }
 
 .largePText {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
