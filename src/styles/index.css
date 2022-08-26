@@ -1,29 +1,57 @@
 :root {
-    --main-color: #473579;
-    --background-color: #232323;
+  --clr-brand: #473579;
+  --clr-bg-dark: #232323;
+  --clr-neutral-dark: #313131;
+  --clr-neutral-light: #f0f0f0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--clr-bg-dark);
+  color: var(--clr-neutral-light);
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
 }
 
 #root {
-    width: 68rem;
-    margin: auto;
-}
-
-body {
-    background-color: var(--background-color);
-    color: white;
-    box-sizing: border-box;
+  width: 68rem;
+  margin: auto;
+  isolation: isolate;
 }
 
 h2 {
-    font-family:  Inter ,Arial, Helvetica, sans-serif;
-    font-size: 48px;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-size: 3rem;
 }
 
 p {
-    font-family: Inter, Arial, Helvetica, sans-serif;
-    font-size: 18px;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-size: 1.125rem;
 }
 
 .largePText {
-    font-size: 24px;
+  font-size: 1.5rem;
 }
