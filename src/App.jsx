@@ -1,11 +1,14 @@
-import { useState } from 'react'
+import Header from './components/Header'
+import Hero from './components/Hero'
+import './styles/header.css'
+import './styles/index.css'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <div className="App">
-     <h1>Hejsan first test.</h1>
+     <Header/>
+     <Hero/>
     </div>
   )
 }

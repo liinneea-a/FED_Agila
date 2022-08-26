@@ -1,0 +1,55 @@
+ ul{
+    list-style: none;
+    margin-right: 5rem;
+    width: 45vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+header{
+    z-index: 10;
+    position: relative;
+    height: 10vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.hero{
+    margin-top: -10vh;
+    background-image: linear-gradient(rgba(71, 53, 121, .5), rgba(71, 53, 121, .5)    ), url("/src/assets/mast.png");
+    height: 800px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: grid;
+    place-content: center;
+}
+
+.heroContent{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 50vh;
+}
+
+.heroContent>p{
+    width: 18rem;
+}
+
+.heroContent>button{
+    border-style: none;
+    background: none;
+    color: white;
+    border: 2px solid #473579;
+    border-radius: 5px;
+    padding: .5rem 1rem;
+    cursor: pointer;
+}
