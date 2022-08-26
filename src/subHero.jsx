@@ -15,17 +15,14 @@ export default function SubHero() {
       <div style={iconsContainerStyle}>
         <div style={iconsStyle}>
           <EmojiObjectsIcon style={icon}/>
-
           <p className="largePText">Great ides for your business</p>
         </div>
         <div style={iconsStyle}>
           <TuneIcon style={icon}/>
-
           <p className="largePText">Perfectly tuned for the market</p>
         </div>
         <div style={iconsStyle}>
           <EmojiObjectsIcon style={icon}/>
-
           <p className="largePText">Innovative and imoressive</p>
         </div>
       </div>
