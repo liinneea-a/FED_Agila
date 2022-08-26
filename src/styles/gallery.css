@@ -1,11 +1,12 @@
 .team-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 4fr));
-    grid-auto-rows: auto;
-    grid-gap: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
 .grid-item img{
+    flex: 0 0 calc(16.66% - 20px);
+    margin: 16px;
     width: 250px;
     height: 200px;
     object-fit: cover;
