@@ -32,10 +32,12 @@ export default function SubHero() {
 
 const iconsContainerStyle = {
   display: 'flex',
+  flexWrap: "wrap",
+  justifyContent: "center"
 }
 
 const iconsStyle = {
-  width: '33%',
+  width: '15.6rem',
   padding: '1rem',
   display: 'flex',
   flexDirection: 'column',
