@@ -1,0 +1,38 @@
+.team-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.grid-item img {
+  flex: 0 0 calc(16.66% - 20px);
+  margin: 16px;
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.team-card-name {
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 3px;
+}
+
+.team-card-role {
+  font-size: 1.2rem;
+  font-weight: lighter;
+  padding: 0;
+  margin: 0;
+}
+
+.grid-item:hover img {
+  background-color: black;
+  opacity: 0.5;
+}
+
+li {
+  list-style: none;
+}
