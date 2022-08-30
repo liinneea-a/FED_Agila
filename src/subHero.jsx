@@ -1,7 +1,7 @@
 import EmojiObjectsIcon from '@mui/icons-material/EmojiObjects'
 import TuneIcon from '@mui/icons-material/Tune'
 import Headliner from './components/Headliner'
-import { textAlign } from '@mui/system'
+import ElectricBoltIcon from '@mui/icons-material/ElectricBolt';
 
 export default function SubHero() {
   return (
@@ -22,7 +22,7 @@ export default function SubHero() {
           <p className="largePText">Perfectly tuned for the market</p>
         </div>
         <div style={iconsStyle}>
-          <EmojiObjectsIcon style={icon} />
+          <ElectricBoltIcon style={icon} />
           <p className="largePText">Innovative and imoressive</p>
         </div>
       </div>
