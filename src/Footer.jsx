@@ -47,6 +47,7 @@ const rootStyle = {
 
 const contentContainerStyle = {
     display: 'flex',
+    flexWrap: "wrap",
     justifyContent: 'space-between',
     width: '100%',
 
