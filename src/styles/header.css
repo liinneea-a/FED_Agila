@@ -63,6 +63,10 @@ header{
     justify-content: space-around;
 }
 
+.heroHeading{
+    font-size: 3.75rem;
+}
+
 .burgerList{
     line-height: 2rem;
 }
