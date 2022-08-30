@@ -65,6 +65,7 @@ header{
 
 .heroHeading{
     font-size: 3.75rem;
+    text-align: center;
 }
 
 .burgerList{
@@ -78,5 +79,12 @@ header{
     }
     .headerList{
         display: none;
+    }
+
+  }
+
+  @media screen and (max-width: 800px) {
+    .heroHeading{
+        font-size: 2.44rem;
     }
   }
