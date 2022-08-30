@@ -53,7 +53,7 @@ export const team = [
   {
     firstname: 'Maximilian',
     lastname: 'Widman',
-    image: 'src/assets/team-pictures/placeholder.png',
+    image: 'src/assets/team-pictures/maxi.jpg',
     role: 'Front-end developer',
     skills: [skills.html, skills.css, skills.javaScript, skills.figma, skills.p5, skills.mongodb, skills.react, skills.typescript],
     contact: { email: 'maximilian.widman@gmail.com' },
