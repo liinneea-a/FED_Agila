@@ -14,7 +14,10 @@ export default function ProfilePage() {
   return (
     <div className="profilePageContainer">
       <div className="sidebar">
-        <img className="imgContainer" src={person.image}/>
+        <div className="imgContainer">
+        <img  src={person.image}/>
+        </div>
+
         <div className="aboutMeContainer">
           <p className="team-card-name profilePageHeadline">ABOUT ME</p>
           <p>{person.presentation}</p>

@@ -26,6 +26,7 @@ p.profilePageHeadline {
 .imgContainer {
     background-color: aquamarine;
     height: 15rem;
+    width: 15rem;
     margin-bottom: 4rem;
 }
 
