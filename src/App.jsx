@@ -6,6 +6,7 @@ import Footer from "./Footer";
 import TeamGallery from "./TeamGallery";
 import "./styles/header.css";
 import "./styles/index.css";
+//test
 
 function App() {
   return (
