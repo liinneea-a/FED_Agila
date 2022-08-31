@@ -23,7 +23,7 @@ export const team = [
   {
     firstname: 'Linnea',
     lastname: 'Albertsson',
-    image: 'src/assets/team-pictures/linnea.png',
+    image: './src/assets/team-pictures/linnea.png',
     role: 'Front-end developer',
     skills: [skills.html, skills.css, skills.react, skills.javaScript, skills.typescript, skills.figma, skills.p5, skills.mongodb, skills.vue],
     contact: { email: 'linnea.albertsson.@gmail.com' },
@@ -33,7 +33,7 @@ export const team = [
   {
     firstname: 'Sabina',
     lastname: 'Andersson',
-    image: 'src/assets/team-pictures/sabina.jpg',
+    image: './src/assets/team-pictures/sabina.jpg',
     role: 'Front-end developer',
     skills: [skills.html, skills.css, skills.csharp,  skills.React, skills.javaScript, skills.Typescript, skills.figma, skills.p5, skills.mongodb, skills.vue, skills.wordpress, skills.photoshop],
     contact: { email: 'sabinaander@hotmail.com' },
@@ -43,7 +43,7 @@ export const team = [
   {
     firstname: 'Tomas',
     lastname: 'Andersson',
-    image: 'src/assets/team-pictures/tomas.jpg',
+    image: './src/assets/team-pictures/tomas.jpg',
     role: 'Front-end developer',
     skills: [skills.html, skills.css, skills.javaScript, skills.typescript, skills.figma, skills.react, skills.next, skills.p5, skills.mongodb, skills.svelte],
     contact: { email: 'linnea.albertsson.@gmail.com' },
@@ -53,7 +53,7 @@ export const team = [
   {
     firstname: 'Maximilian',
     lastname: 'Widman',
-    image: 'src/assets/team-pictures/maxi.jpg',
+    image: './src/assets/team-pictures/maxi.jpg',
     role: 'Front-end developer',
     skills: [skills.html, skills.css, skills.javaScript, skills.figma, skills.p5, skills.mongodb, skills.react, skills.typescript],
     contact: { email: 'maximilian.widman@gmail.com' },
@@ -63,7 +63,7 @@ export const team = [
   {
     firstname: 'Kawan',
     lastname: 'Majeed',
-    image: 'src/assets/team-pictures/placeholder.png',
+    image: './src/assets/team-pictures/placeholder.png',
     role: 'Front-end developer',
     skills: [skills.html, skills.css, skills.javaScript, skills.typescript, skills.figma, skills.react, skills.mongodb],
     contact: { email: 'hello@kawium.dev'},
