@@ -58,3 +58,14 @@ input:focus, textarea:focus {
     margin-bottom: 10px;
     width: 74px;
 }
+
+.required-info{
+font-size: 0.8rem;
+
+}
+
+.form-footer-group{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
