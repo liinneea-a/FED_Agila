@@ -1,3 +1,5 @@
+import image from './assets/team-pictures/linnea.png'
+
 export const skills = {
   html: { name: "HTML", description: "The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets and scripting languages such as JavaScript." },
   css: { name: "CSS", description: "Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language such as HTML or XML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript." },
@@ -23,7 +25,7 @@ export const team = [
   {
     firstname: 'Linnea',
     lastname: 'Albertsson',
-    image: 'dist/assets/team-pictures/linnea.png',
+    image: image,
     role: 'Front-end developer',
     skills: [skills.html, skills.css, skills.react, skills.javaScript, skills.typescript, skills.figma, skills.p5, skills.mongodb, skills.vue],
     contact: { email: 'linnea.albertsson.@gmail.com' },
