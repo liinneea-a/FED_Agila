@@ -40,6 +40,10 @@ p.profilePageHeadline {
     text-transform: uppercase;
 }
 
+ul.listStyle {
+    list-style-type: disc;
+}
+
 hr {
     border: 5px solid var(--clr-brand);
     opacity: 50%;

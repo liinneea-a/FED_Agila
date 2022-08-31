@@ -40,7 +40,7 @@ export default function ProfilePage() {
             <span className='fatText'>{person.role},</span>
             <span> Företag</span>
           </div>
-          <ul>
+          <ul className='listStyle'>
             <li>Sed consequatur quis ut maiores dicta ut delectus dolores.</li>
             <li>
               Eum eius deserunt est praesentium suscipit sed neque obcaecati eos

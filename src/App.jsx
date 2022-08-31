@@ -10,7 +10,7 @@ import ProfilePage from './ProfilePage';
 import StartPage from './StartPage';
 import './styles/header.css';
 import './styles/index.css';
-import './styles/ProfilePage.css';
+// import './styles/ProfilePage.css';
 
 function App() {
   return (
