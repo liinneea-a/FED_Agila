@@ -4,6 +4,7 @@ import * as Yup from "yup";
 import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {
+  let setMessageSent = false;
   useEffect(() => {}, []);
   const form = useRef();
 
@@ -29,8 +30,7 @@ const ContactForm = () => {
           );
 
           setSubmitting(false);
-
-          alert("skickat!");
+          setMessageSent = true;
         }}
       >
         {(formik, errors, touched) => (
@@ -39,6 +39,18 @@ const ContactForm = () => {
             className="contact-form"
             onSubmit={formik.handleSubmit}
           >
+
+            {setMessageSent ? (
+              <div>
+                <hr />
+                <p className="form-message">
+                  Thank you for your message! <br />
+                  We'll get back to you as soon as possible!
+                </p>
+                <hr />
+              </div>
+            ) : null}
+            <h2 className="form-title">How can we help you?</h2>
             <label htmlFor="subject">Subject *</label>
             <Field
               id="subject"
@@ -65,6 +77,7 @@ const ContactForm = () => {
             {formik.errors.message && formik.errors.message ? (
               <div className="error-text">{formik.errors.message}</div>
             ) : null}
+
             <label htmlFor="email">Email *</label>
             <Field
               id="email"
