@@ -6,6 +6,7 @@ import Footer from "./Footer";
 import TeamGallery from "./TeamGallery";
 import "./styles/header.css";
 import "./styles/index.css";
+import AboutUs from "./components/AboutUs";
 //test
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <SubHero />
       <TeamGallery />
       <ContactSection />
+      <AboutUs />
       <Footer />
     </div>
   );
