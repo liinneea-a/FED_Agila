@@ -1,11 +1,12 @@
-import Header from "./components/header";
-import Hero from "./components/hero";
-import SubHero from "./subHero";
-import ContactSection from "./components/ContactSection";
-import Footer from "./Footer";
-import TeamGallery from "./TeamGallery";
-import "./styles/header.css";
-import "./styles/index.css";
+import Header from './components/header'
+import Hero from './components/hero'
+import SubHero from './subHero'
+import ContactSection from './components/ContactSection'
+import Footer from './Footer'
+import TeamGallery from './TeamGallery'
+import './styles/header.css'
+import './styles/index.css'
+import Skills from './components/Skills'
 //test
 
 function App() {
@@ -15,10 +16,11 @@ function App() {
       <Hero />
       <SubHero />
       <TeamGallery />
+      <Skills />
       <ContactSection />
       <Footer />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
