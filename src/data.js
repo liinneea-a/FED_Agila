@@ -1,3 +1,4 @@
+
 import linneaImage from './assets/team-pictures/linnea.png';
 import tomasImage from './assets/team-pictures/tomas.jpg';
 import sabinaImage from './assets/team-pictures/sabina.jpg';
@@ -132,6 +133,7 @@ export const skills = [
     },
 ];
 
+
 export const team = [
   {
     firstname: 'Linnea',
@@ -154,6 +156,7 @@ export const team = [
       socketio,
       typescript,
       vue,
+
     ],
     contact: { email: 'linnea.albertsson@gmail.com' },
     presentation:
@@ -184,7 +187,7 @@ export const team = [
   },
   {
     firstname: 'Tomas',
-    lastname: 'Andersson',
+    lastname: 'Fridekrans',
     image: tomasImage,
     role: 'Front-end developer',
     skills: [
@@ -199,7 +202,7 @@ export const team = [
       skills.mongodb,
       skills.svelte,
     ],
-    contact: { email: 'linnea.albertsson.@gmail.com' },
+    contact: { email: 'tomasfridekrans@outlook.com' },
     presentation:
       'I started learning web development on my own, while I was working a full-time job at a retailer. After a while, I fell in love with it. I love to learn new things and there is no end to what you can learn in web development it seems. LOVE IT! In 2021 I made the move to study at a school, MedieInstitutet, full-time to develop my skills further.',
   },
@@ -240,4 +243,6 @@ export const team = [
     presentation:
       'My name is Kawan Majeed and I study front-end development at the MedieInstitutet in Gothenburg. I have good knowledge in HTML, CSS (Tailwind CSS) and Javascript, also know React.js (it is easy for me to learn new technologies, so if other frameworks are used, it is nothing I can not learn). In my free time, I like gaming for fps games, coding, and watching Netflix with my cat.',
   },
+
 ];
+
