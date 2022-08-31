@@ -1,3 +1,9 @@
+import linneaImage from './assets/team-pictures/linnea.png'
+import tomasImage from './assets/team-pictures/tomas.jpg'
+import sabinaImage from './assets/team-pictures/sabina.jpg'
+import maximilianImage from './assets/team-pictures/maxi.jpg'
+import kawanImage from './assets/team-pictures/placeholder.png'
+
 export const skills = {
   html: { name: "HTML", description: "The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets and scripting languages such as JavaScript." },
   css: { name: "CSS", description: "Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language such as HTML or XML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript." },
@@ -23,7 +29,7 @@ export const team = [
   {
     firstname: 'Linnea',
     lastname: 'Albertsson',
-    image: './src/assets/team-pictures/linnea.png',
+    image: linneaImage,
     role: 'Front-end developer',
     skills: [skills.html, skills.css, skills.react, skills.javaScript, skills.typescript, skills.figma, skills.p5, skills.mongodb, skills.vue],
     contact: { email: 'linnea.albertsson.@gmail.com' },
@@ -33,7 +39,7 @@ export const team = [
   {
     firstname: 'Sabina',
     lastname: 'Andersson',
-    image: './src/assets/team-pictures/sabina.jpg',
+    image: sabinaImage,
     role: 'Front-end developer',
     skills: [skills.html, skills.css, skills.csharp,  skills.React, skills.javaScript, skills.Typescript, skills.figma, skills.p5, skills.mongodb, skills.vue, skills.wordpress, skills.photoshop],
     contact: { email: 'sabinaander@hotmail.com' },
@@ -43,7 +49,7 @@ export const team = [
   {
     firstname: 'Tomas',
     lastname: 'Andersson',
-    image: './src/assets/team-pictures/tomas.jpg',
+    image: tomasImage,
     role: 'Front-end developer',
     skills: [skills.html, skills.css, skills.javaScript, skills.typescript, skills.figma, skills.react, skills.next, skills.p5, skills.mongodb, skills.svelte],
     contact: { email: 'linnea.albertsson.@gmail.com' },
@@ -53,7 +59,7 @@ export const team = [
   {
     firstname: 'Maximilian',
     lastname: 'Widman',
-    image: './src/assets/team-pictures/maxi.jpg',
+    image: maximilianImage,
     role: 'Front-end developer',
     skills: [skills.html, skills.css, skills.javaScript, skills.figma, skills.p5, skills.mongodb, skills.react, skills.typescript],
     contact: { email: 'maximilian.widman@gmail.com' },
@@ -63,7 +69,7 @@ export const team = [
   {
     firstname: 'Kawan',
     lastname: 'Majeed',
-    image: './src/assets/team-pictures/placeholder.png',
+    image: kawanImage,
     role: 'Front-end developer',
     skills: [skills.html, skills.css, skills.javaScript, skills.typescript, skills.figma, skills.react, skills.mongodb],
     contact: { email: 'hello@kawium.dev'},
