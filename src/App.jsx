@@ -4,19 +4,22 @@ import SubHero from "./subHero";
 import ContactSection from "./components/ContactSection";
 import Footer from "./Footer";
 import TeamGallery from "./TeamGallery";
+import ProfilePage from './ProfilePage';
 import "./styles/header.css";
 import "./styles/index.css";
+import './styles/ProfilePage.css'
 //test
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Hero />
-      <SubHero />
-      <TeamGallery />
+      <ProfilePage />
+      {/* <Header />
+      <Hero /> */}
+      {/* <SubHero /> */}
+      {/* <TeamGallery />
       <ContactSection />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 }

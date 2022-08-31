@@ -1,0 +1,45 @@
+
+.profilePageContainer {
+    border: 2px solid red;
+    height: 100vw;
+    display: flex;
+}
+
+.sidebar {
+    background-color: var(--clr-brand);
+    width: 22rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+    
+}
+.aboutMeContainer {
+    margin: 2rem 0;
+}
+
+p.contactTextContainer {
+    width: 100%;
+    border: 1px solid red;
+}
+
+p.profilePageHeadline {
+    margin-bottom: 1rem;
+}
+
+.imgContainer {
+    background-color: aquamarine;
+    /* width: 15rem; */
+    height: 15rem;
+    border-radius: 5px;
+    margin-bottom: 4rem;
+}
+
+.profileInfo {
+    width: 100%;
+    height: 100%;
+}
+
+.workExperience {
+    
+}
