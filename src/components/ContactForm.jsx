@@ -5,7 +5,9 @@ import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {
   let setMessageSent = false;
+
   useEffect(() => {}, []);
+
   const form = useRef();
 
   return (
@@ -21,7 +23,7 @@ const ContactForm = () => {
           message: Yup.string().required("Please fill in a message."),
           email: Yup.string().required("Please enter your email adress."),
         })}
-        onSubmit={(values, { setSubmitting }) => {
+        onSubmit={(values, { resetForm, setSubmitting }) => {
           emailjs.sendForm(
             "service_janhzou",
             "template_tjapnol",
@@ -31,6 +33,7 @@ const ContactForm = () => {
 
           setSubmitting(false);
           setMessageSent = true;
+          resetForm()
         }}
       >
         {(formik, errors, touched) => (
