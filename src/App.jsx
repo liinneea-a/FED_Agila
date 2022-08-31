@@ -16,13 +16,14 @@ import './styles/index.css';
 function App() {
   return (
     <div className="App">
+      <Header />
       <BrowserRouter>
         <Routes>
           <Route path="profile/:id" element={<ProfilePage />}/>
           <Route path="/" element={<StartPage/>} />
         </Routes>
-  
       </BrowserRouter>
+      <Footer/>
     </div>
   );
 }
