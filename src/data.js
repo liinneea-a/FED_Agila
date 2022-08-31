@@ -23,7 +23,7 @@ export const team = [
   {
     firstname: 'Linnea',
     lastname: 'Albertsson',
-    image: './assets/team-pictures/linnea.png',
+    image: 'dist/assets/team-pictures/linnea.png',
     role: 'Front-end developer',
     skills: [skills.html, skills.css, skills.react, skills.javaScript, skills.typescript, skills.figma, skills.p5, skills.mongodb, skills.vue],
     contact: { email: 'linnea.albertsson.@gmail.com' },
