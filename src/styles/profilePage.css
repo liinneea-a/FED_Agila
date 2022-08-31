@@ -38,6 +38,8 @@ p.profilePageHeadline {
 .name {
     margin: 0;
     text-transform: uppercase;
+    line-height: 1;
+   
 }
 
 ul.listStyle {
