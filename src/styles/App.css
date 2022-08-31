@@ -61,7 +61,11 @@ input:focus, textarea:focus {
 
 .required-info{
 font-size: 0.8rem;
+}
 
+.error-text{
+    color: red;
+    font-size: 0.8rem;
 }
 
 .form-footer-group{

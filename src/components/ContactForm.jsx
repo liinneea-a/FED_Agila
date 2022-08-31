@@ -1,4 +1,4 @@
-  import { Formik, Form, Field} from "formik";
+import { Formik, Form, Field } from "formik";
 import React, { useEffect, useRef } from "react";
 import * as Yup from "yup";
 import emailjs from "@emailjs/browser";
@@ -27,14 +27,13 @@ const ContactForm = () => {
             "form",
             "2ijQHECER4e4p4In8"
           );
-          
+
           setSubmitting(false);
 
           alert("skickat!");
-          
         }}
       >
-        {(formik) => (
+        {(formik, errors, touched) => (
           <Form
             ref={form}
             className="contact-form"
@@ -49,6 +48,9 @@ const ContactForm = () => {
               value={formik.values.subject}
               error={formik.touched.subject && formik.errors.subject}
             />
+            {formik.errors.subject && formik.errors.subject ? (
+              <div className="error-text">{formik.errors.subject}</div>
+            ) : null}
 
             <label htmlFor="message">Message *</label>
             <textarea
@@ -60,7 +62,9 @@ const ContactForm = () => {
               value={formik.values.message}
               error={formik.touched.message && formik.errors.message}
             />
-
+            {formik.errors.message && formik.errors.message ? (
+              <div className="error-text">{formik.errors.message}</div>
+            ) : null}
             <label htmlFor="email">Email *</label>
             <Field
               id="email"
@@ -71,7 +75,9 @@ const ContactForm = () => {
               value={formik.values.email}
               error={formik.touched.email && formik.errors.email}
             />
-
+            {formik.errors.email && formik.errors.email ? (
+              <div className="error-text">{formik.errors.email}</div>
+            ) : null}
             <div className="form-footer-group">
               <button disabled={formik.isSubmitting} type="submit" value="send">
                 Send
