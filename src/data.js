@@ -4,7 +4,22 @@ import sabinaImage from './assets/team-pictures/sabina.jpg'
 import maximilianImage from './assets/team-pictures/maxi.jpg'
 import kawanImage from './assets/team-pictures/placeholder.png'
 
-
+import photoshop from '../images/photoshop.png'
+import express from '../images/Express.jpg'
+import figma from '../images/Figma-logo.png'
+import formik from '../images/Formik-Title.png'
+import html from '../images/HTML5logo.png'
+import javascript from '../images/JS-logo.png'
+import mongodb from '../images/MongoDB.png'
+import mongoose from '../images/mongoose.png'
+import multer from '../images/Multer.png'
+import nodejs from '../images/nodejs.png'
+import p5js from '../images/p5js.png'
+import react from '../images/React-icon.png'
+import socketio from '../images/Socket-io.png'
+import svelte from '../images/Svelte_Logo.png'
+import typescript from '../images/typescript-logo.png'
+import vue from '../images/Vue-logo.png'
 
 
 export const skills = [
@@ -34,7 +49,7 @@ export const team = [
     lastname: 'Albertsson',
     image: linneaImage,
     role: 'Front-end developer',
-    skills: [skills.html, skills.css, skills.react, skills.javaScript, skills.typescript, skills.figma, skills.p5, skills.mongodb, skills.vue],
+    skills: [express, figma, formik, html, javascript, mongodb, mongoose, multer, nodejs, p5js, photoshop, react,socketio,typescript, vue],
     contact: { email: 'linnea.albertsson@gmail.com' },
     presentation:' I am 25 years old and currently living in Gothenburg, Sweden.I am passionate about creating and finding new cool ways to do so.For a long time, my base has been on stage or in front of a camera, acting and singing(I am a huge fan of musicals). But have been doing that for a few years I wanted to try something new.'
       ,

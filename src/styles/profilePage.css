@@ -61,3 +61,16 @@ hr {
 .fatText {
     font-weight:bold;
 }
+
+.skillsContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skillsContainer > * {
+    margin: .5rem;
+}
+
+/* #skillsImg {
+    display: inline;
+} */

@@ -15,7 +15,7 @@ export default function ProfilePage() {
     <div className="profilePageContainer">
       <div className="sidebar">
         <div className="imgContainer">
-        <img  src={person.image}/>
+          <img src={person.image} />
         </div>
 
         <div className="aboutMeContainer">
@@ -32,7 +32,9 @@ export default function ProfilePage() {
 
       <div className="profileInfo">
         <div className="headline">
-          <h2 className="name">{person.firstname} {person.lastname}</h2>
+          <h2 className="name">
+            {person.firstname} {person.lastname}
+          </h2>
           <p>{person.role}</p>
         </div>
 
@@ -40,10 +42,10 @@ export default function ProfilePage() {
           <p className="team-card-name">WORK EXPERIENCE</p>
           <hr />
           <div>
-            <span className='fatText'>{person.role},</span>
+            <span className="fatText">{person.role},</span>
             <span> Företag</span>
           </div>
-          <ul className='listStyle'>
+          <ul className="listStyle">
             <li>Sed consequatur quis ut maiores dicta ut delectus dolores.</li>
             <li>
               Eum eius deserunt est praesentium suscipit sed neque obcaecati eos
@@ -55,11 +57,19 @@ export default function ProfilePage() {
         <div className="container">
           <p className="team-card-name">SKILLS</p>
           <hr />
-        
-          <span>LOGO </span>
-          <span>LOGO </span>
-          <span>LOGO </span>
-          <span>LOGO </span>
+          <div className="skillsContainer">
+            {person.skills.map((skill) => {
+              return (
+                <img
+                  className="skillsImg"
+                  src={skill}
+                  key={skill}
+                  width=""
+                  height="30px"
+                />
+              );
+            })}
+          </div>
         </div>
         <div className="container">
           <p className="team-card-name">EDUCATION</p>
