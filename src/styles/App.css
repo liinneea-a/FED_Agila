@@ -1,5 +1,5 @@
 .headliner {
-    text-align: center;
+  text-align: center;
 }
 
 .headliner h2 {
@@ -13,48 +13,71 @@
 }
 
 .section {
-    display: grid;
-    place-items: center;
-    padding-block: 5rem;
+  display: grid;
+  place-items: center;
+  padding-block: 5rem;
 }
 
 .contact-form {
-    font-family: Inter, Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-    margin: .5rem;
-    display: flex;
-    flex-direction: column;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0.5rem;
+  display: flex;
+  flex-direction: column;
 }
 
-.contact-form input, textarea {
-    background-color: #313131;
-    border: none;
-    border-radius: 5px;
-    height: 50px;
-    width: 282px;
-    color: white;
+.contact-form input,
+textarea {
+  background-color: #313131;
+  border: none;
+  border-radius: 5px;
+  height: 50px;
+  width: 282px;
+  color: white;
 }
 
-input:focus, textarea:focus {
-    outline: none !important;
-    border: solid 3px;
-    border-color: #473579;
+input:focus,
+textarea:focus {
+  outline: none !important;
+  border: solid 3px;
+  border-color: #473579;
 }
 
 .contact-form textarea {
-    height: 130px;
+  height: 130px;
 }
 
 .contact-form button {
-    background-color: transparent;
-    border: solid 2px;
-    border-color: #473579;
-    color: white;
-    border-radius: 5px;
-    height: 40px;
-    cursor: pointer;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 74px;
+  background-color: transparent;
+  border: solid 2px;
+  border-color: #473579;
+  color: white;
+  border-radius: 5px;
+  height: 40px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 74px;
+}
+
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-content: center;
+  margin-top: 2rem;
+}
+
+.skill-grid-item {
+  background-color: var(--clr-neutral-dark);
+  padding: 0.75rem 1rem;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: grid;
+  grid-column-start: span 3;
 }
