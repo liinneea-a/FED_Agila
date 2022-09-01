@@ -1,6 +1,7 @@
-import LoginIcon from "@mui/icons-material/Login";
-import MenuIcon from "@mui/icons-material/Menu";
 import Burger from "./burger";
+import Login from "./loginModal";
+import ModelWrapper from "./test";
+
 function Header() {
   return (
     <header id="home">
@@ -24,9 +25,8 @@ function Header() {
           <a href="#contact">Contact</a>
         </li>
         <li>
-          <a href="/">
-            <LoginIcon />
-          </a>
+          <ModelWrapper />
+          {/* <Login /> */}
         </li>
       </ul>
       <div className="headerBurger">
