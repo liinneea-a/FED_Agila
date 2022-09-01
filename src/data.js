@@ -138,13 +138,13 @@ export const skills = [
   {
     name: 'Csharp',
     description:
-      '',
+      'C# is a general-purpose, multi-paradigm programming language. C# encompasses static typing, strong typing, lexically scoped, imperative, declarative, functional, generic, object-oriented (class-based), and component-oriented programming disciplines.',
     image: csharp
   },
   {
     name: 'CSS',
     description:
-      '',
+      'Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML or XML (including XML dialects such as SVG, MathML or XHTML). CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.',
     image: css
   }
 ];
