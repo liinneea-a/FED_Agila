@@ -1,4 +1,8 @@
- ul{
+html{
+    scroll-behavior: smooth;
+}
+
+ul{
     list-style: none;
 }
 
@@ -72,7 +76,7 @@ header{
     line-height: 2rem;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 640px) {
     .headerBurger{
         display: block;
 
@@ -82,8 +86,17 @@ header{
     }
 
   }
-
+  @media screen and (max-width: 1100px) {
+    .headerList{
+        margin-right: 2rem;
+        width: 60vw;
+    }
+  }
   @media screen and (max-width: 800px) {
+    .headerList{
+        margin-right: 2rem;
+        width: 70vw;
+    }
     .heroHeading{
         font-size: 2.44rem;
     }
