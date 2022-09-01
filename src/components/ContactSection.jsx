@@ -1,6 +1,7 @@
 import React from "react";
 import mapImg from "../assets/images/map.jpg";
 import ContactForm from "./ContactForm";
+import Directions from "./Directions";
 import Headliner from "./Headliner";
 import Map from "./Map";
 
@@ -13,6 +14,7 @@ const ContactSection = () => {
       />
       <ContactForm />
       <Map />
+      <Directions />
     </div>
   );
 };
