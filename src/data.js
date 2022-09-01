@@ -82,12 +82,6 @@ export const skills = [
     image: vue
   },
   {
-    name: 'C#',
-    description:
-      'C# is a general-purpose, multi-paradigm programming language. C# encompasses static typing, strong typing, lexically scoped, imperative, declarative, functional, generic, object-oriented, and component-oriented programming disciplines.',
-    image: vue
-  },
-  {
     name: 'WordPress',
     description:
       'WordPress is a free and open-source content management system written in PHP and paired with a MySQL or MariaDB database with supported HTTPS. Features include a plugin architecture and a template system, referred to within WordPress as Themes.',
