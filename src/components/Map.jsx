@@ -1,11 +1,8 @@
 import {
   useJsApiLoader,
   GoogleMap,
-  Marker,
-  Autocomplete,
-  DirectionsRenderer,
+  Marker
 } from "@react-google-maps/api";
-import { useRef, useState } from "react";
 import React from "react";
 
 const containerStyle = {
