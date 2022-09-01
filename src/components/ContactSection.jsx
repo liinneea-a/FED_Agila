@@ -10,7 +10,7 @@ const ContactSection = () => {
     <div className="section" id="contact">
       <Headliner
         title="Get In Touch"
-        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus "
+        text="Find your way to our cozy headquarters for a fresh brew of coffee, or contact us through our message-form below."
       />
       <ContactForm />
       <Map />
