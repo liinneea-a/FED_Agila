@@ -1,4 +1,11 @@
-import { GoogleMap, Marker, useJsApiLoader } from "@react-google-maps/api";
+import {
+  useJsApiLoader,
+  GoogleMap,
+  Marker,
+  Autocomplete,
+  DirectionsRenderer,
+} from "@react-google-maps/api";
+import { useRef, useState } from "react";
 import React from "react";
 
 const containerStyle = {
@@ -6,10 +13,9 @@ const containerStyle = {
   height: "450px",
 };
 
-const school = {
+const center = {
   lat: 57.7099144609402,
   lng: 11.994554255984776,
-
 };
 
 function Map() {
@@ -18,25 +24,26 @@ function Map() {
     googleMapsApiKey: "AIzaSyBLWanYeOgZf97PIHpX-3kcghuhsIqFIgw",
   });
 
-  const onLoad = React.useCallback(function callback(map) {
-    const bounds = new window.google.maps.LatLngBounds(school);
-    map.fitBounds(bounds);
-    setMap(map);
-  }, []);
-
   const [map, setMap] = React.useState(null);
-  const onUnmount = React.useCallback(function callback(map) {
-    setMap(null);
-  }, []);
+
+  if (!isLoaded) {
+    return;
+  }
 
   return isLoaded ? (
     <GoogleMap
+      center={center}
+      zoom={17}
       mapContainerStyle={containerStyle}
-      school={school}
-      zoom={9}
-      onLoad={onLoad}
-      onUnmount={onUnmount}
+      options={{
+        zoomControl: true,
+        streetViewControl: false,
+        mapTypeControl: false,
+        fullscreenControl: false,
+      }}
+      onLoad={(map) => setMap(map)}
     >
+      <Marker position={center} />
     </GoogleMap>
   ) : (
     <></>
