@@ -1,27 +1,27 @@
 import LoginIcon from "@mui/icons-material/Login";
 import MenuIcon from "@mui/icons-material/Menu";
-
+import Burger from "./burger";
 function Header() {
   return (
-    <header>
+    <header id="home">
       <ul className="headerList">
         <li>
-          <a href="/">Home</a>
+          <a href="#home">Home</a>
         </li>
         <li>
-          <a href="/">Services</a>
+          <a href="#services">Services</a>
         </li>
         <li>
-          <a href="/">About Us</a>
+          <a href="#aboutus">About Us</a>
         </li>
         <li>
-          <a href="/">Team</a>
+          <a href="#team">Team</a>
         </li>
         <li>
-          <a href="/">Portfolio</a>
+          <a href="#portfolio">Portfolio</a>
         </li>
         <li>
-          <a href="/">Contact</a>
+          <a href="#contact">Contact</a>
         </li>
         <li>
           <a href="/">
@@ -30,7 +30,7 @@ function Header() {
         </li>
       </ul>
       <div className="headerBurger">
-        <MenuIcon />
+        <Burger />
       </div>
     </header>
   );
