@@ -3,7 +3,7 @@ import Headliner from "./Headliner";
 
 function AboutUs() {
   return (
-    <div className="section">
+    <div className="section" id="aboutUs">
       <Headliner
         title="About us"
         text="Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus"

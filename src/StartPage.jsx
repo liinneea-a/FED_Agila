@@ -2,6 +2,7 @@ import Hero from './components/hero';
 import SubHero from './subHero';
 import ContactSection from './components/ContactSection';
 import TeamGallery from './TeamGallery';
+import AboutUs from './components/AboutUs';
 
 
 export default function StartPage(){
@@ -11,6 +12,7 @@ export default function StartPage(){
         <SubHero />
         <TeamGallery />
         <ContactSection />
+        <AboutUs />
         </>
     )
 }

@@ -1,6 +1,7 @@
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import ListItems from './components/NavListItems';
 
 export default function Footer() {
   return (
@@ -8,12 +9,7 @@ export default function Footer() {
       <div style={contentContainerStyle}>
         <div>
           <ul style={listStyle}>
-            <li>Home</li>
-            <li>Services</li>
-            <li>About us</li>
-            <li>Team</li>
-            <li>Portfolio</li>
-            <li>Contact</li>
+            <ListItems />
           </ul>
         </div>
         <div style={iconsStyle}>
@@ -22,7 +18,7 @@ export default function Footer() {
           <LinkedInIcon />
         </div>
         <div style={listStyle}>
-          <p style={{margin: 0}}>
+          <p style={{ margin: 0 }}>
             Anders Personsgatan 18
             <br />
             416 64, Göteborg
@@ -37,29 +33,28 @@ export default function Footer() {
 }
 
 const rootStyle = {
-    paddingTop: '1rem',
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    // backgroundColor: "#313131",
-    textAlign: 'center',
-}
+  paddingTop: '1rem',
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center',
+  // backgroundColor: "#313131",
+  textAlign: 'center',
+};
 
 const contentContainerStyle = {
-    display: 'flex',
-    flexWrap: "wrap",
-    justifyContent: 'space-between',
-    width: '100%',
-
-}
+  display: 'flex',
+  flexWrap: 'wrap',
+  justifyContent: 'space-between',
+  width: '100%',
+};
 
 const listStyle = {
-    listStyle: 'none',
-    padding: 0,
-    textAlign: 'left',
-    width: '10rem',
-}
+  listStyle: 'none',
+  padding: 0,
+  textAlign: 'left',
+  width: '10rem',
+};
 
 const iconsStyle = {
-    fontSize: '1.5rem',
-}
+  fontSize: '1.5rem',
+};
