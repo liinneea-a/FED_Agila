@@ -7,6 +7,7 @@ import TeamGallery from "./TeamGallery";
 import "./styles/header.css";
 import "./styles/index.css";
 import AboutUs from "./components/AboutUs";
+import SkillSection from "./components/SkillSection";
 //test
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Hero />
       <SubHero />
       <TeamGallery />
+      <SkillSection />
       <ContactSection />
       <AboutUs />
       <Footer />

@@ -2,7 +2,10 @@ import linneaImage from './assets/team-pictures/linnea.png'
 import tomasImage from './assets/team-pictures/tomas.jpg'
 import sabinaImage from './assets/team-pictures/sabina.jpg'
 import maximilianImage from './assets/team-pictures/maxi.jpg'
-import kawanImage from './assets/team-pictures/placeholder.png'
+import kawanImage from './assets/team-pictures/kawium.png'
+// place holder is test image
+import placeholder from './assets/team-pictures/placeholder.png'
+
 
 export const skills = {
   html: { name: "HTML", description: "The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets and scripting languages such as JavaScript." },
@@ -23,6 +26,18 @@ export const skills = {
   node:{name:"NodeJS", description:"Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on a JavaScript Engine (i.e. V8 engine) and executes JavaScript code outside a web browser, which was designed to build scalable network applications. Node.js lets developers use JavaScript to write command line tools and for server-side scripting—running scripts server-side to produce dynamic web page content before the page is sent to the user's web browser. Consequently, Node.js represents a 'JavaScript everywhere' paradigm, unifying web-application development around a single programming language, rather than different languages for server-side and client-side scripts."},
   mongoose:{name:"Mongoose", description:"Mongoose is a JavaScript object-oriented programming library that creates a connection between MongoDB and the Node.js JavaScript runtime environment. Mongoose provides a straight-forward, schema-based solution to model your application data. It includes built-in type casting, validation, query building, business logic hooks and more, out of the box."},
   socketIO:{name:"SocketIO", description:"Socket.IO is a library that enables low-latency, bidirectional and event-based communication between a client and a server. It is built on top of the WebSocket protocol and provides additional guarantees like fallback to HTTP long-polling or automatic reconnection."}
+}
+
+export const projects = {
+  TierCopy: { image: placeholder, link: "https://github.com/sabinaander/tier-copy"},
+  Woodlands: { image: placeholder, link: "https://github.com/sabinaander/woodlands"},
+  KawanCV: { image: kawanImage, link: "https://github.com/Kawium/kawiumdev"},
+  MaximilianCV: { image: placeholder, link: "https://github.com/PettoDavida/Widman-CV"},
+  LinneaCV: { image: placeholder, link: "https://github.com/liinneea-a/PORTFOLIO"},
+  TomasJobListing: { image: placeholder, link: "https://github.com/spaceflake/job-listings-app"},
+  SabinaCalculator: { image: placeholder, link: "https://github.com/sabinaander/change-calculator"},
+  TomasChatUp: { image: placeholder, link: "https://github.com/spaceflake/socket-chatt"},
+  MaximilianWeatherApp: { image: placeholder, link: "https://github.com/PettoDavida/typescript-miniprojekt"},
 }
 
 export const team = [
