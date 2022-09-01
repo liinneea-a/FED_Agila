@@ -8,8 +8,7 @@ export default function SubHero() {
     <div className="section">
       <Headliner
         title="What We Do"
-        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
-          purus sit amet luctus"
+        text="We are a all-in-one front-line team in which your business can reach new levels of customer connectivity."
       />
 
       <div style={iconsContainerStyle}>
