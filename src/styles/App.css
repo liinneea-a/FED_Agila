@@ -87,4 +87,14 @@ hr{
     display: flex;
     align-items: center;
     gap: 1rem;
+
+.directions{
+    height: 40px;
+    cursor: pointer;
+    font-size: 2rem;
+    text-align: center;
+    border-bottom: 2px solid white;
+    padding-bottom: 3rem;
+    text-transform: uppercase;
+
 }
