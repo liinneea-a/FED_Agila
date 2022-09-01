@@ -1,10 +1,11 @@
 import LoginIcon from "@mui/icons-material/Login";
 import MenuIcon from "@mui/icons-material/Menu";
 import ListItems from "./NavListItems";
+import Burger from "./burger";
 
 function Header() {
   return (
-    <header>
+    <header id="home">
       <ul className="headerList">
        <ListItems/>
         <li>
@@ -14,7 +15,7 @@ function Header() {
         </li>
       </ul>
       <div className="headerBurger">
-        <MenuIcon />
+        <Burger />
       </div>
     </header>
   );

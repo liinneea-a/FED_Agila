@@ -1,6 +1,6 @@
-import Headliner from './components/Headliner'
-import { team, skills } from './data'
-import TeamCard from './TeamCard'
+import Headliner from "./components/Headliner";
+import { team, skills } from "./data";
+import TeamCard from "./TeamCard";
 
 function TeamGallery() {
   return (
@@ -13,7 +13,7 @@ function TeamGallery() {
         <TeamCard props={team} />
       </ul>
     </div>
-  )
+  );
 }
 
-export default TeamGallery
+export default TeamGallery;
