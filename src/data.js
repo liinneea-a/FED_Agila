@@ -6,13 +6,6 @@ import kawanImage from './assets/team-pictures/kawium.png'
 // place holder is test image
 import placeholder from './assets/team-pictures/placeholder.png'
 
-
-import linneaImage from './assets/team-pictures/linnea.png';
-import tomasImage from './assets/team-pictures/tomas.jpg';
-import sabinaImage from './assets/team-pictures/sabina.jpg';
-import maximilianImage from './assets/team-pictures/maxi.jpg';
-import kawanImage from './assets/team-pictures/placeholder.png';
-
 import photoshop from '../images/photoshop.png';
 import express from '../images/Express.jpg';
 import figma from '../images/Figma-logo.png';
@@ -153,16 +146,40 @@ export const skills = [
 
 
 export const projects = {
-  TierCopy: { image: placeholder, link: "https://github.com/sabinaander/tier-copy"},
-  Woodlands: { image: placeholder, link: "https://github.com/sabinaander/woodlands"},
-  KawanCV: { image: kawanImage, link: "https://github.com/Kawium/kawiumdev"},
-  MaximilianCV: { image: placeholder, link: "https://github.com/PettoDavida/Widman-CV"},
-  LinneaCV: { image: placeholder, link: "https://github.com/liinneea-a/PORTFOLIO"},
-  TomasJobListing: { image: placeholder, link: "https://github.com/spaceflake/job-listings-app"},
-  SabinaCalculator: { image: placeholder, link: "https://github.com/sabinaander/change-calculator"},
-  TomasChatUp: { image: placeholder, link: "https://github.com/spaceflake/socket-chatt"},
-  MaximilianWeatherApp: { image: placeholder, link: "https://github.com/PettoDavida/typescript-miniprojekt"},
-}
+  TierCopy: {
+    image: placeholder,
+    link: "https://github.com/sabinaander/tier-copy",
+  },
+  Woodlands: {
+    image: placeholder,
+    link: "https://github.com/sabinaander/woodlands",
+  },
+  KawanCV: { image: kawanImage, link: "https://github.com/Kawium/kawiumdev" },
+  MaximilianCV: {
+    image: placeholder,
+    link: "https://github.com/PettoDavida/Widman-CV",
+  },
+  LinneaCV: {
+    image: placeholder,
+    link: "https://github.com/liinneea-a/PORTFOLIO",
+  },
+  TomasJobListing: {
+    image: placeholder,
+    link: "https://github.com/spaceflake/job-listings-app",
+  },
+  SabinaCalculator: {
+    image: placeholder,
+    link: "https://github.com/sabinaander/change-calculator",
+  },
+  TomasChatUp: {
+    image: placeholder,
+    link: "https://github.com/spaceflake/socket-chatt",
+  },
+  MaximilianWeatherApp: {
+    image: placeholder,
+    link: "https://github.com/PettoDavida/typescript-miniprojekt",
+  },
+};
 
 export const team = [
   {
