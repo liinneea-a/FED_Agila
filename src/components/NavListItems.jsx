@@ -1,4 +1,4 @@
-import { Link, animateScroll as scroll } from 'react-scroll';
+
 
 export default function ListItems() {
   return (
@@ -10,25 +10,16 @@ export default function ListItems() {
         <a href="/">Services</a>
       </li>
       <li>
-        <Link
-          activeClass="active"
-          to="aboutUs"
-          spy={true}
-          smooth={true}
-          duration={1000}
-          offset={-100}
-        >
-          About Us
-        </Link>
+         <a href="#aboutUs">About us</a>
       </li>
       <li>
-        <a href="/">Team</a>
+        <a href="#team">Team</a>
       </li>
       <li>
-        <a href="/">Portfolio</a>
+        <a href="#portfolio">Portfolio</a>
       </li>
       <li>
-        <a href="/">Contact</a>
+        <a href="#contact">Contact</a>
       </li>
     </>
   );

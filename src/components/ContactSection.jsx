@@ -5,7 +5,7 @@ import Headliner from './Headliner'
 
 const ContactSection = () => {
   return (
-    <div className="section">
+    <div className="section" id="contact">
       <Headliner
         title="Get In Touch"
         text="Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus "

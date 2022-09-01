@@ -4,7 +4,7 @@ import TeamCard from './TeamCard'
 
 function TeamGallery() {
   return (
-    <div className="section">
+    <div className="section" id="team">
       <Headliner
         title="The Team"
         text="Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus "
