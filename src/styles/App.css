@@ -58,3 +58,13 @@ input:focus, textarea:focus {
     margin-bottom: 10px;
     width: 74px;
 }
+
+.directions{
+    height: 40px;
+    cursor: pointer;
+    font-size: 2rem;
+    text-align: center;
+    border-bottom: 2px solid white;
+    padding-bottom: 3rem;
+    text-transform: uppercase;
+}
