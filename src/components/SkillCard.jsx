@@ -3,14 +3,7 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 
 const SkillCard = () => {
-  const [isOpen, setisOpen] = useState(false)
   const [selected, setSelected] = useState('')
-
-  const handleClick = (e) => {
-    setSelected(e.target)
-    setisOpen(!isOpen)
-    console.log(selected)
-  }
 
   return (
     <>
