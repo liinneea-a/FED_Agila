@@ -1,15 +1,18 @@
 import Headliner from './Headliner'
 import SkillCard from './SkillCard'
+import { LayoutGroup } from 'framer-motion'
 
 const Skills = () => {
   return (
     <div className="section">
       <Headliner
         title="Tech Stack"
-        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus "
+        text="With a keen eye on tecnologies, we consistenly add to our tech-stack to fit your needs."
       />
       <ul className="skill-grid">
-        <SkillCard />
+        <LayoutGroup>
+          <SkillCard />
+        </LayoutGroup>
       </ul>
     </div>
   )
