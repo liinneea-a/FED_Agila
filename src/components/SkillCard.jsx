@@ -17,7 +17,9 @@ const SkillCard = () => {
               ? 'skill-grid-item expand'
               : 'skill-grid-item'
           }
-          onClick={() => setSelected(skill.name)}
+          onClick={() =>
+            selected === skill.name ? setSelected('') : setSelected(skill.name)
+          }
           style={{ borderRadius: '5px' }}
         >
           <motion.div layout="position">
