@@ -1,4 +1,3 @@
-
 .profilePageContainer {
     width: 100%;
     height: 100%;
@@ -12,8 +11,9 @@
     display: flex;
     flex-direction: column;
     padding: 4rem;
-    
+
 }
+
 .aboutMeContainer {
     margin: 2rem 0;
 }
@@ -23,12 +23,13 @@ p.profilePageHeadline {
     margin-bottom: 1rem;
 }
 
-.imgContainer {
-    background-color: aquamarine;
+.imgContainer>img {
     height: 15rem;
     width: 15rem;
     margin-bottom: 4rem;
+    border-radius: 5px;
 }
+
 
 .profileInfo {
     width: 100%;
@@ -40,7 +41,7 @@ p.profilePageHeadline {
     margin: 0;
     text-transform: uppercase;
     line-height: 1;
-   
+
 }
 
 ul.listStyle {
@@ -59,7 +60,7 @@ hr {
 }
 
 .fatText {
-    font-weight:bold;
+    font-weight: bold;
 }
 
 .skillsContainer {
@@ -67,10 +68,81 @@ hr {
     flex-wrap: wrap;
 }
 
-.skillsContainer > * {
+.skillsContainer>* {
     margin: .5rem;
 }
 
-/* #skillsImg {
-    display: inline;
-} */
+.startpageBtn {
+    margin: 1.5rem 0;
+}
+
+.l-show {
+    display: block;
+}
+
+.l-hidden {
+    visibility: hidden;
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+
+    .profilePageContainer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sidebar {
+        width: 100%;
+        padding: 4rem 7rem;
+        align-items: center;
+    }
+
+    .imgContainer>img {
+        height: 75%;
+        width: 75%;
+        margin: auto;
+        margin-bottom: 2rem;
+    }
+
+    .name {
+        font-size: 24px;
+    }
+
+    .l-hidden {
+        visibility: visible;
+        display: block
+    }
+
+    .l-show {
+        visibility: hidden;
+        display: none;
+    }
+}
+
+@media screen and (max-width: 640px) {
+
+    .profilePageContainer {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        padding: 2rem
+    }
+
+    .profileInfo {
+        width: 100%;
+        height: 100%;
+        padding: 2rem;
+    }
+
+    .l-hidden {
+        display: block
+    }
+
+    .l-show {
+        visibility: hidden;
+        display: none;
+    }
+}
