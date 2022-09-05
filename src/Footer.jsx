@@ -13,7 +13,7 @@ export default function Footer() {
               <a href="#home">Home</a>
             </li>
             <li>
-              <a href="#services">Services</a>
+              <a href="#services">Our stack</a>
             </li>
             <li>
               <a href="#aboutus">About us</a>

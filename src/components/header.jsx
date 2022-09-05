@@ -9,7 +9,7 @@ function Header() {
           <a href="#home">Home</a>
         </li>
         <li>
-          <a href="#services">Services</a>
+          <a href="#skills">Our Stack</a>
         </li>
         <li>
           <a href="#aboutus">About Us</a>
@@ -18,7 +18,7 @@ function Header() {
           <a href="#team">Team</a>
         </li>
         <li>
-          <a href="#portfolio">Portfolio</a>
+          <a href="#ourworks">Portfolio</a>
         </li>
         <li>
           <a href="#contact">Contact</a>
