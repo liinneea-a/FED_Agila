@@ -84,9 +84,7 @@ export default class AccountModal extends Component {
                     values.email === existingUsers[i].email &&
                     values.password === existingUsers[i].password;
                   if (userExists) {
-                    const loggedIn = { values };
                     console.log("true");
-                    localStorage.setItem("loggedIn", JSON.stringify(loggedIn));
                   } else {
                     // create login error on login form
                     // email or password incorrect
@@ -205,18 +203,7 @@ export default class AccountModal extends Component {
             Close
           </button>
         </Modal>
-        <button
-          onClick={() => {
-            const loggedIn = localStorage.getItem("loggedIn");
-            console.log(loggedIn);
-            if (loggedIn != null) {
-              localStorage.removeItem("loggedIn");
-            } else {
-              this.openModal("login");
-            }
-          }}
-          className={whiteButton}
-        >
+        <button onClick={this.openModal("login")} className={whiteButton}>
           <LoginIcon />
         </button>
       </>

@@ -1,5 +1,5 @@
 import Burger from "./burger";
-import AccountModal from "./accountModal";
+import AccountModal from "./modal";
 import "../styles/forms.css";
 
 function Header() {

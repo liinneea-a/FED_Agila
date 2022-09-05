@@ -1,7 +1,7 @@
 import React from "react";
 import { slide as Menu } from "react-burger-menu";
 import "../styles/burger.css";
-import AccountModal from "./accountModal";
+import AccountModal from "./modal";
 
 export default (props) => {
   return (
