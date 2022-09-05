@@ -1,5 +1,6 @@
 .headliner {
   text-align: center;
+  margin-bottom: 1rem;
 }
 
 .headliner h2 {
@@ -9,13 +10,14 @@
 }
 
 .headliner p {
-  max-width: 23.5rem;
+  max-width: 35rem;
 }
 
 .section {
   display: grid;
   place-items: center;
   padding-block: 5rem;
+  padding: 1rem;
 }
 
 .contact-form {
@@ -48,17 +50,17 @@ textarea:focus {
   height: 130px;
 }
 
-.contact-form button {
-  background-color: transparent;
-  border: solid 2px;
-  border-color: #473579;
+.sumbit-form-button {
+  background-color: var(--clr-cta);
+  border: none;
+  font-size: 1.5rem;
   color: white;
   border-radius: 5px;
   height: 40px;
   cursor: pointer;
   margin-top: 10px;
   margin-bottom: 10px;
-  width: 74px;
+  width: 6rem;
 }
 
 .skill-grid {
