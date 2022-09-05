@@ -14,7 +14,7 @@ export default function ProfilePage() {
   return (
     <>
       <Link to="/">
-        <p className="startpageBtn">Back to startpage</p>
+        <button className="contact-form startpageBtn">Back to startpage</button>
       </Link>
       <div className="profilePageContainer">
         <div className="sidebar">
