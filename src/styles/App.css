@@ -49,7 +49,7 @@ textarea:focus {
 }
 
 .sumbit-form-button {
-  background-color: #479a9f;
+  background-color: var(--clr-cta);
   border: none;
   font-size: 1.5rem;
   color: white;
