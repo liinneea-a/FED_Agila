@@ -49,16 +49,16 @@ textarea:focus {
 }
 
 .sumbit-form-button {
-  background-color: transparent;
-  border: solid 2px;
-  border-color: #473579;
+  background-color: #479a9f;
+  border: none;
+  font-size: 1.5rem;
   color: white;
   border-radius: 5px;
   height: 40px;
   cursor: pointer;
   margin-top: 10px;
   margin-bottom: 10px;
-  width: 74px;
+  width: 6rem;
 }
 
 .skill-grid {
