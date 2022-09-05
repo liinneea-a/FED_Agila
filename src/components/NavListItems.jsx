@@ -7,16 +7,16 @@ export default function ListItems() {
         <a href="/">Home</a>
       </li>
       <li>
-        <a href="/">Services</a>
+        <a href="#skills">Our Stack</a>
       </li>
       <li>
-         <a href="#aboutUs">About us</a>
+         <a href="#aboutus">About us</a>
       </li>
       <li>
         <a href="#team">Team</a>
       </li>
       <li>
-        <a href="#portfolio">Portfolio</a>
+        <a href="#ourworks">Portfolio</a>
       </li>
       <li>
         <a href="#contact">Contact</a>
