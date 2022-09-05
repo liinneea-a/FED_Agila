@@ -48,3 +48,7 @@ input:focus, textarea:focus {
 .white{
     color: white;
 }
+
+.error{
+    color: red;
+}
