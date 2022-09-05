@@ -10,23 +10,23 @@ export default function Footer() {
           <ul style={listStyle}>
             <h3>Site links</h3>
             <li>
-              <a href="#home">Home</a>
-            </li>
-            <li>
-              <a href="#services">Our stack</a>
-            </li>
-            <li>
-              <a href="#aboutus">About us</a>
-            </li>
-            <li>
-              <a href="#team">Team</a>
-            </li>
-            <li>
-              <a href="#portfolio">Portfolio</a>
-            </li>
-            <li>
-              <a href="#contact">Contact</a>
-            </li>
+          <a href="#home">Home</a>
+        </li>
+        <li>
+          <a href="#skills">Our Stack</a>
+        </li>
+        <li>
+          <a href="#aboutus">About Us</a>
+        </li>
+        <li>
+          <a href="#team">Team</a>
+        </li>
+        <li>
+          <a href="#ourworks">Portfolio</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
           </ul>
         </div>
         <div className="footer-content-section" style={listStyle}>
