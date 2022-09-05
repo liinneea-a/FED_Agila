@@ -1,6 +1,6 @@
 import Burger from "./burger";
-import Login from "./loginModal";
-import ModelWrapper from "./test";
+import AccountModal from "./accountModal";
+import "../styles/forms.css";
 
 function Header() {
   return (
@@ -25,8 +25,7 @@ function Header() {
           <a href="#contact">Contact</a>
         </li>
         <li>
-          <ModelWrapper />
-          {/* <Login /> */}
+          <AccountModal />
         </li>
       </ul>
       <div className="headerBurger">
