@@ -8,7 +8,6 @@ function SkillSection() {
     <div className="section" id="ourworks">
       <Headliner
         title="Our Works"
-        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus"
       />
       <div className="wrapper">
         <div className="content-box">
