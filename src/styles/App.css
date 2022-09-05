@@ -17,7 +17,7 @@
   display: grid;
   place-items: center;
   padding-block: 5rem;
-  padding: 1rem;
+  padding-inline: 1rem;
 }
 
 .contact-form {
