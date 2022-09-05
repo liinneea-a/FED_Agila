@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Modal from "react-modal";
 import LoginIcon from "@mui/icons-material/Login";
-import { Formik, Field, Form } from "formik";
+import { Formik, Field, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";
 
 const modalStyling = {
@@ -26,7 +26,7 @@ const RegisterFormSchema = Yup.object().shape({
   password: Yup.string().required("Password Required"),
 });
 
-export default class ModelWrapper extends Component {
+export default class AccountModal extends Component {
   state = {
     loginOpened: false,
     signupOpened: false,
@@ -80,9 +80,16 @@ export default class ModelWrapper extends Component {
                 console.log(values);
                 for (let i = 0; i < existingUsers.length; i++) {
                   console.log(existingUsers[i]);
-                  if (values === existingUsers[i]) {
+                  const userExists =
+                    values.email === existingUsers[i].email &&
+                    values.password === existingUsers[i].password;
+                  if (userExists) {
+                    const loggedIn = { values, logged: true };
                     console.log("true");
-                    localStorage.setItem("loggedIn", true);
+                    localStorage.setItem("loggedIn", JSON.stringify(loggedIn));
+                  } else {
+                    // create login error on login form
+                    // email or password incorrect
                   }
                 }
               }}
@@ -95,12 +102,24 @@ export default class ModelWrapper extends Component {
                   placeholder="jane@acme.com"
                   type="email"
                 />
+                {ErrorMessage.email && touched.email ? (
+                  <div>{ErrorMessage.email}</div>
+                ) : null}
+                <ErrorMessage component="span" name="email" className="error" />
                 <label htmlFor="password">Password</label>
                 <Field
                   id="password"
                   name="password"
                   placeholder="password"
                   type="password"
+                />
+                {ErrorMessage.password && touched.password ? (
+                  <div>{ErrorMessage.password}</div>
+                ) : null}
+                <ErrorMessage
+                  component="span"
+                  name="password"
+                  className="error"
                 />
                 <button type="submit">Submit</button>
               </Form>
@@ -152,12 +171,24 @@ export default class ModelWrapper extends Component {
                   placeholder="jane@acme.com"
                   type="email"
                 />
+                {ErrorMessage.email && touched.email ? (
+                  <div>{ErrorMessage.email}</div>
+                ) : null}
+                <ErrorMessage component="span" name="email" className="error" />
                 <label htmlFor="password">Password</label>
                 <Field
                   id="password"
                   name="password"
                   placeholder="password"
                   type="password"
+                />
+                {ErrorMessage.password && touched.password ? (
+                  <div>{ErrorMessage.password}</div>
+                ) : null}
+                <ErrorMessage
+                  component="span"
+                  name="password"
+                  className="error"
                 />
                 <button type="submit">Submit</button>
               </Form>
