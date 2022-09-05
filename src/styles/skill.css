@@ -1,7 +1,3 @@
-/* * {
-    transition: all 130ms linear 0s;
-} */
-
 .wrapper {
   padding: 2rem;
   padding-top: 1rem;
@@ -24,6 +20,7 @@
   border-radius: 2%;
   border: 1px solid grey;
   filter: contrast(80%);
+  transition: all 130ms linear 0s;
 }
 
 .item > a > img:hover {
