@@ -7,7 +7,7 @@ const Skills = () => {
     <div className="section">
       <Headliner
         title="Tech Stack"
-        text="With a keen eye on tecnologies, we consistenly add to our tech-stack to fit your needs."
+        text="With a keen eye on technologies, we continuously add to our tech-stack to fit your needs."
       />
       <ul className="skill-grid">
         <LayoutGroup>
