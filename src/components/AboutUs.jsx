@@ -33,7 +33,7 @@ const rootStyle = {
   alignItems: "center",
   paddingTop: "1rem",
   fontSize: "0.9rem",
-  padding: "4rem",
+  maxWidth: "45rem",
 };
 
 const contentTextStyle = {

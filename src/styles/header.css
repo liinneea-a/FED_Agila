@@ -41,7 +41,8 @@ header{
 }
 
 .heroContent>p{
-    width: 18rem;
+    max-width: 30rem;
+    padding: 1rem;
 }
 
 .heroContent a{
@@ -90,6 +91,11 @@ header{
 }
 
 @media screen and (max-width: 640px) {
+    .button-group{
+        flex-direction: column;
+        gap: 1rem;
+    }
+
     .headerBurger{
         display: block;
 

@@ -9,13 +9,14 @@
 }
 
 .headliner p {
-  max-width: 23.5rem;
+  max-width: 35rem;
 }
 
 .section {
   display: grid;
   place-items: center;
   padding-block: 5rem;
+  padding: 1rem;
 }
 
 .contact-form {
