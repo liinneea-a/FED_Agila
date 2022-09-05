@@ -6,7 +6,6 @@ function AboutUs() {
     <div className="section" id="aboutus">
       <Headliner
         title="About us"
-        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus"
       />
       <div style={rootStyle} >
         <div style={contentTextStyle}>
