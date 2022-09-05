@@ -1,6 +1,7 @@
 import React from "react";
 import ReactModal from "react-modal";
 import LoginIcon from "@mui/icons-material/Login";
+import LogoutIcon from "@mui/icons-material/Logout";
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";
 
@@ -50,7 +51,7 @@ export default function AccountModal() {
           }}
           className={whiteButton}
         >
-          <LoginIcon />
+          <LogoutIcon />
         </button>
       ) : (
         <button onClick={() => setShowModal2(true)} className={whiteButton}>
