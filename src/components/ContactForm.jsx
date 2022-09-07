@@ -1,6 +1,8 @@
 import { Formik, Form, Field } from "formik";
 import React, { useEffect, useRef } from "react";
 import * as Yup from "yup";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {
@@ -9,6 +11,10 @@ const ContactForm = () => {
   useEffect(() => {}, []);
 
   const form = useRef();
+
+  const notify = () => toast.success("Message has been sent successfully!", {
+    theme: "colored"
+  });
 
   return (
     <div>
@@ -33,6 +39,7 @@ const ContactForm = () => {
 
           setSubmitting(false);
           setMessageSent = true;
+          notify()
           resetForm()
         }}
       >
@@ -46,6 +53,7 @@ const ContactForm = () => {
             {setMessageSent ? (
               <div>
                 <hr />
+                <ToastContainer />
                 <p className="form-message">
                   Thank you for your message! <br />
                   We'll get back to you as soon as possible!
@@ -95,7 +103,7 @@ const ContactForm = () => {
               <div className="error-text">{formik.errors.email}</div>
             ) : null}
             <div className="form-footer-group">
-              <button disabled={formik.isSubmitting} type="submit" value="send">
+              <button className="sumbit-form-button" disabled={formik.isSubmitting} type="submit" value="send">
                 Send
               </button>
               <p className="required-info">* These fields are required</p>

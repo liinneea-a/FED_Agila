@@ -7,7 +7,11 @@ function Hero() {
         We as a company believe in the freedom of the individual, and the power of a team.<br/> 
         We strive to create unique and inspiring web applications to ensure an exciting and progressive experience for everyone involved.
         </p>
-        <button>See more</button>
+        <div className="button-group">
+        <a href="#aboutus">See more</a>
+        <a href="#contact" >Contact us</a>
+        </div>
+
       </div>
     </div>
   );

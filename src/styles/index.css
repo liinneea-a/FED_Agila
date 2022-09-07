@@ -8,6 +8,7 @@
   --clr-bg-dark: #232323;
   --clr-neutral-dark: #313131;
   --clr-neutral-light: #f0f0f0;
+  --clr-cta: #479a9f;
 }
 
 *,
@@ -19,6 +20,10 @@
 html,
 body {
   height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -62,4 +67,11 @@ li, span {
 
 .largePText {
   font-size: 1.5rem;
+}
+
+/* large mobile media query */
+@media screen and (max-width: 640px) {
+  .largePText {
+    font-size: 1.125rem;
+  }
 }

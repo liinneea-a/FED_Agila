@@ -1,6 +1,8 @@
-import FacebookIcon from "@mui/icons-material/Facebook";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
+
+import FacebookIcon from '@mui/icons-material/Facebook';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import ListItems from './components/NavListItems';
 
 export default function Footer() {
   return (
@@ -8,25 +10,7 @@ export default function Footer() {
       <div className="footer-container" style={contentContainerStyle}>
         <div className="footer-content-section">
           <ul style={listStyle}>
-            <h3>Site links</h3>
-            <li>
-              <a href="#home">Home</a>
-            </li>
-            <li>
-              <a href="#services">Our stack</a>
-            </li>
-            <li>
-              <a href="#aboutus">About us</a>
-            </li>
-            <li>
-              <a href="#team">Team</a>
-            </li>
-            <li>
-              <a href="#portfolio">Portfolio</a>
-            </li>
-            <li>
-              <a href="#contact">Contact</a>
-            </li>
+            <ListItems />
           </ul>
         </div>
         <div className="footer-content-section" style={listStyle}>
