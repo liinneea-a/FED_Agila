@@ -36,13 +36,20 @@ const CustomModal = (props) => {
 };
 
 export default function AccountModal() {
-  const [showModal1, setShowModal1] = React.useState(false);
-  const [showModal2, setShowModal2] = React.useState(false);
+  const [showSignupModal, setShowSignupModal] = React.useState(false);
+  const [showLoginModal, setShowLoginModal] = React.useState(false);
   const [isLoggedIn, setIsLoggedIn] = React.useState(false);
   const ModalComponent = CustomModal;
   const whiteButton = "noStyleButton white";
   const notifyError = () => {
     toast.error("Email or password is incorrect");
+  };
+  const notifySuccessRegister = () => {
+    toast.success("User registered, redirection in 2 sec");
+    setTimeout(() => {
+      setShowSignupModal(false);
+      setShowLoginModal(true);
+    }, 3000);
   };
 
   return (
@@ -58,14 +65,14 @@ export default function AccountModal() {
           <LogoutIcon />
         </button>
       ) : (
-        <button onClick={() => setShowModal2(true)} className={whiteButton}>
+        <button onClick={() => setShowLoginModal(true)} className={whiteButton}>
           <LoginIcon />
         </button>
       )}
       {/* Signup */}
       <ModalComponent
-        isOpen={showModal1}
-        onRequestClose={() => setShowModal1(false)}
+        isOpen={showSignupModal}
+        onRequestClose={() => setShowSignupModal(false)}
       >
         <div>
           <h1>Signup</h1>
@@ -83,12 +90,13 @@ export default function AccountModal() {
               }
               existingUsers.push(values);
               localStorage.setItem("users", JSON.stringify(existingUsers));
+              notifySuccessRegister();
             }}
           >
             <Form className="accountForm">
-              <label htmlFor="email">Email</label>
+              <label htmlFor="mail">Email</label>
               <Field
-                id="email"
+                id="mail"
                 name="email"
                 placeholder="jane@acme.com"
                 type="email"
@@ -119,7 +127,10 @@ export default function AccountModal() {
         <p>
           Already have an account?
           <button
-            onClick={() => setShowModal1(false)}
+            onClick={() => {
+              setShowSignupModal(false);
+              setShowLoginModal(true);
+            }}
             className="noStyleButton"
           >
             Login
@@ -127,18 +138,19 @@ export default function AccountModal() {
         </p>
         <button
           onClick={() => {
-            setShowModal1(false);
-            setShowModal2(false);
+            setShowSignupModal(false);
+            setShowLoginModal(false);
           }}
           className="modalCloseButton"
         >
           Close
         </button>
+        <ToastContainer autoClose={2000} />
       </ModalComponent>
       {/* login */}
       <ModalComponent
-        isOpen={showModal2}
-        onRequestClose={() => setShowModal2(false)}
+        isOpen={showLoginModal}
+        onRequestClose={() => setShowLoginModal(false)}
       >
         <div>
           <h1>Login</h1>
@@ -161,7 +173,7 @@ export default function AccountModal() {
                 if (userExists) {
                   setIsLoggedIn(true);
                   console.log("true");
-                  setShowModal2(false);
+                  setShowLoginModal(false);
 
                   userNonexistent = false;
                 } else {
@@ -175,9 +187,9 @@ export default function AccountModal() {
             }}
           >
             <Form className="accountForm">
-              <label htmlFor="email">Email</label>
+              <label htmlFor="mail">Email</label>
               <Field
-                id="email"
+                id="mail"
                 name="email"
                 placeholder="jane@acme.com"
                 type="email"
@@ -207,7 +219,10 @@ export default function AccountModal() {
           <p>
             Dont have an account?
             <button
-              onClick={() => setShowModal1(true)}
+              onClick={() => {
+                setShowSignupModal(true);
+                setShowLoginModal(false);
+              }}
               className="noStyleButton"
             >
               Signup
@@ -215,7 +230,7 @@ export default function AccountModal() {
           </p>
         </div>
         <button
-          onClick={() => setShowModal2(false)}
+          onClick={() => setShowLoginModal(false)}
           className="modalCloseButton"
         >
           Close
