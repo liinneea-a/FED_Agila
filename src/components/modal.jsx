@@ -4,7 +4,8 @@ import LoginIcon from "@mui/icons-material/Login";
 import LogoutIcon from "@mui/icons-material/Logout";
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";
-
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const modalStyling = {
   content: {
     top: "50%",
@@ -40,6 +41,9 @@ export default function AccountModal() {
   const [isLoggedIn, setIsLoggedIn] = React.useState(false);
   const ModalComponent = CustomModal;
   const whiteButton = "noStyleButton white";
+  const notifyError = () => {
+    toast.error("Email or password is incorrect");
+  };
 
   return (
     <div className="App">
@@ -58,6 +62,7 @@ export default function AccountModal() {
           <LoginIcon />
         </button>
       )}
+      {/* Signup */}
       <ModalComponent
         isOpen={showModal1}
         onRequestClose={() => setShowModal1(false)}
@@ -120,8 +125,17 @@ export default function AccountModal() {
             Login
           </button>
         </p>
-        <button onClick={() => setShowModal1(false)}>Close</button>
+        <button
+          onClick={() => {
+            setShowModal1(false);
+            setShowModal2(false);
+          }}
+          className="modalCloseButton"
+        >
+          Close
+        </button>
       </ModalComponent>
+      {/* login */}
       <ModalComponent
         isOpen={showModal2}
         onRequestClose={() => setShowModal2(false)}
@@ -138,6 +152,7 @@ export default function AccountModal() {
               let existingUsers = JSON.parse(localStorage.getItem("users"));
               console.log(existingUsers);
               console.log(values);
+              let userNonexistent = true;
               for (let i = 0; i < existingUsers.length; i++) {
                 console.log(existingUsers[i]);
                 const userExists =
@@ -146,10 +161,16 @@ export default function AccountModal() {
                 if (userExists) {
                   setIsLoggedIn(true);
                   console.log("true");
+                  setShowModal2(false);
+
+                  userNonexistent = false;
                 } else {
-                  // create login error on login form
-                  // email or password incorrect
+                  console.log("error");
+                  userNonexistent = true;
                 }
+              }
+              if (userNonexistent) {
+                notifyError();
               }
             }}
           >
@@ -193,7 +214,13 @@ export default function AccountModal() {
             </button>
           </p>
         </div>
-        <button onClick={() => setShowModal2(false)}>Close</button>
+        <button
+          onClick={() => setShowModal2(false)}
+          className="modalCloseButton"
+        >
+          Close
+        </button>
+        <ToastContainer />
       </ModalComponent>
     </div>
   );

@@ -26,7 +26,7 @@ input:focus, textarea:focus {
     height: 130px;
 }
 
-.accountForm button {
+.accountForm button, .modalCloseButton {
     background-color: transparent;
     border: solid 2px;
     border-color: #473579;
