@@ -33,7 +33,7 @@ And finally the whole site was built step by step by using the mockups, followin
 
 Github Repo: https://github.com/liinneea-a/FED_Agila
 
-Live demo on: https://fed-agila-2-214umlas2-liinneea-a.vercel.app/
+Live demo on: https://fed-agila-2.vercel.app/
 
 
 Made by: 
