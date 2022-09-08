@@ -6,8 +6,13 @@ import "../styles/forms.css";
 function Header() {
   return (
     <header id="home">
+      <img
+        src="/src/assets/logos/logo-and-name-50.png"
+        alt="Creative Point Logo"
+        className="headerLogo"
+      />
       <ul className="headerList">
-       <ListItems/>
+        <ListItems />
         <li>
           <AccountModal />
         </li>
