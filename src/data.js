@@ -4,7 +4,16 @@ import sabinaImage from './assets/team-pictures/sabina.jpg'
 import maximilianImage from './assets/team-pictures/maxi.jpg'
 import kawanImage from './assets/team-pictures/kawium.png'
 // place holder is test image
-import placeholder from './assets/team-pictures/placeholder.png'
+
+import woodlandPic from "./assets/ourworks-pictures/printScreen.png"
+import weatherPic from "./assets/ourworks-pictures/weather_icon3.png"
+import socketChat from "./assets/ourworks-pictures/socketchat.png"
+import lPortfolio from "./assets/ourworks-pictures/portfolio.png"
+import cameraPic from "./assets/ourworks-pictures/camera.png"
+import tankHeroPic from "./assets/ourworks-pictures/tankHero.png"
+import letsDrinkPic from "./assets/ourworks-pictures/drinks.png"
+import duckyProjectPic from "./assets/ourworks-pictures/ducky.png"
+
 
 import photoshop from '../images/photoshop.png'
 import express from '../images/Express.jpg'
@@ -139,37 +148,40 @@ export const skills = [
 ]
 
 export const projects = {
-  TierCopy: {
-    image: placeholder,
-    link: 'https://github.com/sabinaander/tier-copy',
+  cameraProject: {
+    image: cameraPic,
+    link: 'https://github.com/PettoDavida/kameraproffset-database',
   },
-  Woodlands: {
-    image: placeholder,
+  woodland: {
+    image: woodlandPic,
     link: 'https://github.com/sabinaander/woodlands',
   },
-  KawanCV: { image: kawanImage, link: 'https://github.com/Kawium/kawiumdev' },
-  MaximilianCV: {
-    image: placeholder,
-    link: 'https://github.com/PettoDavida/Widman-CV',
+  KawanCV: 
+  { image: kawanImage, 
+    link: 'https://github.com/Kawium/kawiumdev' 
+  },
+  tankHero: {
+    image: tankHeroPic,
+    link: 'https://github.com/AdaHep/Tank-Hero',
   },
   LinneaCV: {
-    image: placeholder,
+    image: lPortfolio,
     link: 'https://github.com/liinneea-a/PORTFOLIO',
   },
-  TomasJobListing: {
-    image: placeholder,
-    link: 'https://github.com/spaceflake/job-listings-app',
+  duckyProject: {
+    image: duckyProjectPic,
+    link: 'https://github.com/OliviaIsberg/ducky',
   },
-  SabinaCalculator: {
-    image: placeholder,
-    link: 'https://github.com/sabinaander/change-calculator',
+  letsDrink: {
+    image: letsDrinkPic,
+    link: 'https://github.com/OliviaIsberg/miniprojekt',
   },
   TomasChatUp: {
-    image: placeholder,
+    image: socketChat,
     link: 'https://github.com/spaceflake/socket-chatt',
   },
   MaximilianWeatherApp: {
-    image: placeholder,
+    image: weatherPic,
     link: 'https://github.com/PettoDavida/typescript-miniprojekt',
   },
 }

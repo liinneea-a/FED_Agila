@@ -1,37 +1,21 @@
-import React from "react";
-import { slide as Menu } from "react-burger-menu";
-import "../styles/burger.css";
-import AccountModal from "./modal";
+import { slide as Menu } from 'react-burger-menu'
+import '../styles/burger.css'
+import ListItems from './NavListItems'
+import { useState } from 'react'
 
-export default (props) => {
+const Burger = (props) => {
+  const [menuOpen, setMenuOpen] = useState(false)
+
+
+  const handleclick = () => {
+    setMenuOpen(!menuOpen)
+  }
+
   return (
-    // Pass on our props
-    <Menu right {...props}>
-      <AccountModal />
-
-      <a className="menu-item" href="#home">
-        Home
-      </a>
-
-      <a className="menu-item" href="#services">
-        Services
-      </a>
-
-      <a className="menu-item" href="#aboutus">
-        About us
-      </a>
-
-      <a className="menu-item" href="#team">
-        Team
-      </a>
-
-      <a className="menu-item" href="#portfolio">
-        Portfolio
-      </a>
-
-      <a className="menu-item" href="#contact">
-        Contact
-      </a>
+    <Menu right {...props} isOpen={menuOpen}>
+      <ListItems handleClick={handleclick} />
     </Menu>
-  );
-};
+  )
+}
+
+export default Burger

@@ -12,13 +12,13 @@ function SkillSection() {
       <div className="wrapper">
         <div className="content-box">
           <div className="item">
-            <a href={projects.TierCopy.link} target="_blank">
-              <img src={projects.TierCopy.image} alt="image for later" />
+            <a href={projects.cameraProject.link} target="_blank">
+              <img src={projects.cameraProject.image} alt="image for later" />
             </a>
           </div>
           <div className="item">
-            <a href={projects.Woodlands.link} target="_blank">
-              <img src={projects.TierCopy.image} alt="image for later" />
+            <a href={projects.woodland.link} target="_blank">
+              <img src={projects.woodland.image} alt="image for later" />
             </a>
           </div>
           <div className="item">
@@ -27,33 +27,33 @@ function SkillSection() {
             </a>
           </div>
           <div className="item">
-            <a href={projects.MaximilianCV.link} target="_blank">
-              <img src={projects.TierCopy.image} alt="image for later" />
+            <a href={projects.tankHero.link} target="_blank">
+              <img src={projects.tankHero.image} alt="image for later" />
             </a>
           </div>
           <div className="item">
             <a href={projects.LinneaCV.link} target="_blank">
-              <img src={projects.TierCopy.image} alt="image for later" />
+              <img src={projects.LinneaCV.image} alt="image for later" />
             </a>
           </div>
           <div className="item">
-            <a href={projects.TomasJobListing.link} target="_blank">
-              <img src={projects.TierCopy.image} alt="image for later" />
+            <a href={projects.duckyProject.link} target="_blank">
+              <img src={projects.duckyProject.image} alt="image for later" />
             </a>
           </div>
           <div className="item">
-            <a href={projects.SabinaCalculator.link} target="_blank">
-              <img src={projects.TierCopy.image} alt="image for later" />
+            <a href={projects.letsDrink.link} target="_blank">
+              <img src={projects.letsDrink.image} alt="image for later" />
             </a>
           </div>
           <div className="item">
             <a href={projects.TomasChatUp.link} target="_blank">
-              <img src={projects.TierCopy.image} alt="image for later" />
+              <img src={projects.TomasChatUp.image} alt="image for later" />
             </a>
           </div>
           <div className="item">
             <a href={projects.MaximilianWeatherApp.link} target="_blank">
-              <img src={projects.TierCopy.image} alt="image for later" />
+              <img src={projects.MaximilianWeatherApp.image} alt="image for later" />
             </a>
           </div>
         </div>
