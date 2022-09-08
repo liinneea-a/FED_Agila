@@ -1,39 +1,28 @@
-import FacebookIcon from "@mui/icons-material/Facebook";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
+
+import FacebookIcon from '@mui/icons-material/Facebook';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import ListItems from './components/NavListItems';
 
 export default function Footer() {
   return (
     <div style={rootStyle}>
-      <div style={contentContainerStyle}>
-        <div>
+      <div className="footer-container" style={contentContainerStyle}>
+        <div className="footer-content-section">
           <ul style={listStyle}>
-            <li>
-              <a href="#home">Home</a>
-            </li>
-            <li>
-              <a href="#services">Services</a>
-            </li>
-            <li>
-              <a href="#aboutus">About us</a>
-            </li>
-            <li>
-              <a href="#team">Team</a>
-            </li>
-            <li>
-              <a href="#portfolio">Portfolio</a>
-            </li>
-            <li>
-              <a href="#contact">Contact</a>
-            </li>
+            <ListItems />
           </ul>
         </div>
-        <div style={iconsStyle}>
-          <FacebookIcon />
-          <InstagramIcon />
-          <LinkedInIcon />
+        <div className="footer-content-section" style={listStyle}>
+          <h3>Social links</h3>
+          <div className="social-icons-container">  
+              <FacebookIcon fontSize="large" className="social-icon"/>            
+              <InstagramIcon fontSize="large" className="social-icon"/>      
+              <LinkedInIcon fontSize="large" className="social-icon"/>
+          </div>
         </div>
-        <div style={listStyle}>
+        <div style={listStyle} className="footer-content-section">
+          <h3>Our address</h3>
           <p style={{ margin: 0 }}>
             Anders Personsgatan 18
             <br />
@@ -43,7 +32,7 @@ export default function Footer() {
           </p>
         </div>
       </div>
-      <p>Copyright</p>
+      <p>Copyright Creative Point © 2022</p>
     </div>
   );
 }
@@ -53,24 +42,20 @@ const rootStyle = {
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
-  // backgroundColor: "#313131",
   textAlign: "center",
 };
 
 const contentContainerStyle = {
-  display: "flex",
-  flexWrap: "wrap",
-  justifyContent: "space-between",
-  width: "100%",
+  // display: "flex",
+  // padding:"1rem",
+  // flexDirection:"row",
+  // flexWrap: "wrap",
+  // justifyContent: "space-between",
+  // width: "100%",
 };
 
 const listStyle = {
   listStyle: "none",
-  padding: 0,
-  textAlign: "left",
-  width: "10rem",
+  textAlign: "left"
 };
 
-const iconsStyle = {
-  fontSize: "1.5rem",
-};

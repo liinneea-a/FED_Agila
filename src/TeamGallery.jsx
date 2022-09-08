@@ -7,7 +7,7 @@ function TeamGallery() {
     <div className="section" id="team">
       <Headliner
         title="The Team"
-        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus "
+        text="Down below you'll find our amazing team of Creative Pointers!"
       />
       <ul className="team-gallery">
         <TeamCard props={team} />
