@@ -16,7 +16,7 @@ header{
     position: relative;
     height: 10vh;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -91,8 +91,7 @@ header{
 }
 
 .headerLogo{
-    position: absolute;
-    left: 5rem;
+    margin-left: 5rem;
 }
 
 @media screen and (max-width: 640px) {
@@ -130,6 +129,6 @@ header{
     }
     .headerLogo{
         height: 2rem;
-        left: 2rem;
+        margin-left: 2rem;
     }
   }
