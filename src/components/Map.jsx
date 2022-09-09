@@ -1,30 +1,26 @@
-import {
-  useJsApiLoader,
-  GoogleMap,
-  Marker
-} from "@react-google-maps/api";
-import React from "react";
+import { useJsApiLoader, GoogleMap, Marker } from '@react-google-maps/api'
+import React from 'react'
 
 const containerStyle = {
-  width: "100%",
-  height: "450px",
-};
+  width: '100%',
+  height: '450px',
+}
 
 const center = {
   lat: 57.7099144609402,
   lng: 11.994554255984776,
-};
+}
 
 function Map() {
   const { isLoaded } = useJsApiLoader({
-    id: "google-map-script",
-    googleMapsApiKey: "AIzaSyBLWanYeOgZf97PIHpX-3kcghuhsIqFIgw",
-  });
+    id: 'google-map-script',
+    googleMapsApiKey: 'AIzaSyBLWanYeOgZf97PIHpX-3kcghuhsIqFIgw',
+  })
 
-  const [map, setMap] = React.useState(null);
+  const [map, setMap] = React.useState(null)
 
   if (!isLoaded) {
-    return;
+    return
   }
 
   return isLoaded ? (
@@ -34,9 +30,9 @@ function Map() {
       mapContainerStyle={containerStyle}
       options={{
         zoomControl: true,
-        streetViewControl: false,
-        mapTypeControl: false,
-        fullscreenControl: false,
+        streetViewControl: true,
+        mapTypeControl: true,
+        fullscreenControl: true,
       }}
       onLoad={(map) => setMap(map)}
     >
@@ -44,7 +40,7 @@ function Map() {
     </GoogleMap>
   ) : (
     <></>
-  );
+  )
 }
 
-export default Map;
+export default Map
