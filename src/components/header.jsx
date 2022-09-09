@@ -1,17 +1,20 @@
-import LoginIcon from "@mui/icons-material/Login";
-import MenuIcon from "@mui/icons-material/Menu";
 import ListItems from "./NavListItems";
 import Burger from "./burger";
+import AccountModal from "./modal";
+import "../styles/forms.css";
 
 function Header() {
   return (
     <header id="home">
+      <img
+        src="/src/assets/logos/logo-and-name-50.png"
+        alt="Creative Point Logo"
+        className="headerLogo"
+      />
       <ul className="headerList">
-       <ListItems/>
+        <ListItems />
         <li>
-          <a href="/">
-            <LoginIcon />
-          </a>
+          <AccountModal />
         </li>
       </ul>
       <div className="headerBurger">
